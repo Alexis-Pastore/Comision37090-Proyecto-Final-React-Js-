@@ -1,12 +1,25 @@
-import './app.css'
+import './app.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
-import FormBusqueda from './FormBusqueda/FormBusqueda';
+import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
+import Cart from './Cart/Cart';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
 const App = () => {
+  
   return (
     <>
-    <Navbar/>
-    {/*<FormBusqueda busqueda={"Buscar usuarios"}/>*/}
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>  
+          <Route path='/product/:id' element={<ItemDetailContainer/>}/>         
+          <Route path='/Cart' element={<Cart/>}/>
+          <Route path='/category/:category' element={<ItemListContainer/>}/>
+        </Routes>
+      </BrowserRouter>
+      
     </>
+   
   );
 }
 
