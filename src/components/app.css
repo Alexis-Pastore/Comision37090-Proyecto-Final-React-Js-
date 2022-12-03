@@ -1,8 +1,45 @@
-.cardProducto {
-    width: 18rem;
-    margin: 4px;
-}
 .ItemDetail {
     max-width: 400px;
     margin-top: 20px;
 }
+.App {
+    background-color: violet;
+}
+.cardProducto {
+
+      width: 18rem;
+     margin-inline: auto;
+     margin-top: 35px;
+     align-items:center;
+     justify-content: center;
+    /* background-color: pink;*/
+}
+.row cardProductos {
+    margin: 4px;
+    align-items:center;
+    justify-content: center;
+}
+.cartWidget {
+   /* position: relative;*/
+    left: 33%;
+}
+.botItem {
+    margin: 10px;
+}
+.card-body {
+    margin-bottom: ;
+}
+.container ´{
+    margin-top: 340px;
+}
+.darkMode {
+    background-color: black;
+    color: salmon;
+}
+
+/*.col-md-4{
+    margin: px;
+    align-items:center;
+    justify-content: center;
+
+}*/
